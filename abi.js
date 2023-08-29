@@ -5,8 +5,8 @@ const fs = require("fs")
 // Encrypted ERC20
 
 // const contractAbi = JSON.stringify(JSON.parse(fs.readFileSync("./EncryptedERC20_ABI.json")))
-const contractAbi = JSON.stringify(JSON.parse(fs.readFileSync("./abi.json")))
-const privateKey = ""
+const contractAbi = JSON.stringify(JSON.parse(fs.readFileSync("./erc20Abi.json")))
+const privateKey = JSON.stringify(fs.readFileSync("./privatekey.json"))
 
 // wallet key not equal public key
 

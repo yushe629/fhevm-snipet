@@ -1,6 +1,8 @@
 // import { Network, Alchemy } from "alchemy-sdk"
 const { Network, Alchemy } = require("alchemy-sdk")
 
+// Using Alchemy
+
 const alchemySettings = {
     // apiKey is Alchemy api key.
     apiKey: "",
