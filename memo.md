@@ -20,4 +20,18 @@ dapps.zama.ai における実装を見る感じ
 5. getInstance().setTokenSignature(contractAddress, signature);
 6. return {signature, publicKey}
 
-
+## eip-712署名について
+- browser
+  - `signature = await window.ethereum.request({ method: 'eth_signTypedData_v4', [userAddress, EIPToken] });`
+  - EIPToken:
+    - domain
+      - chainId
+      - name
+      - contractaddress
+      - version
+    - message
+      - 
+    - primaryType
+      - 
+    - types
+  - generateToken でkeypairとEIP712Tokenをくれるから、署名してねということらしい
